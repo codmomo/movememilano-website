@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="MoveMe - Servizio traslochi a Milano: traslochi, montaggio mobili, facchinaggio e stoccaggio per privati, aziende e partner.">
+  <meta name="keywords" content="traslochi, montaggio mobili, Milano, MoveMe">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoveMe - Traslochi</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body oncontextmenu="return false;">
+  <!-- Navbar: i link usano JavaScript per la navigazione -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#home" class="logo" onclick="navigate(event, 'home')">Move<span>Me</span></a>
+        <ul class="nav-links">
+          <li><a href="#home" onclick="navigate(event, 'home')">Home</a></li>
+          <li><a href="#booking" onclick="navigate(event, 'booking')">Prenota trasloco</a></li>
+          <li><a href="#punti-forza" onclick="navigate(event, 'punti-forza')">I nostri Vantaggi</a></li>
+          <li><a href="#contattaci" class="contatti-link" onclick="navigate(event, 'contattaci')">Contattaci</a></li>
+          <li class="total-header">Totale Trasloco: €<span id="total-top">0</span></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Container per il contenuto dinamico -->
+  <main id="content" class="container">
+    <!-- Il contenuto verrà caricato dinamicamente -->
+  </main>
+
+  <!-- Footer e Banner Copyright/Privacy -->
+  <footer>
+    <div class="container">
+      <a href="#home" class="logo" onclick="navigate(event, 'home')">Move<span>Me</span></a>
+      <p>&copy; 2025 MoveMe - Tutti i diritti riservati</p>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>© 2025 MoveMe. Tutti i diritti sono riservati. Utilizzando questo sito accetti la nostra <a href="#">Politica sulla Privacy</a> e l'uso dei cookie.</p>
+  </div>
+</body>
+</html>
