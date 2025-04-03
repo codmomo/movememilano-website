@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="MoveMe - Shell per il sito di traslochi a Milano">
+  <meta name="keywords" content="traslochi, Milano, MoveMe">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoveMe - Shell</title>
+  <!-- Font Awesome per le icone -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Link al file CSS esterno -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body oncontextmenu="return false;">
+  <!-- Shell minima: header e menu hamburger -->
+  <header class="shell-header">
+    <div class="container">
+      <a href="#" class="logo">Move<span>Me</span></a>
+      <i class="fas fa-bars hamburger" id="hamburger"></i>
+      <nav id="navMenu" class="nav-menu">
+        <ul>
+          <li><a href="#hero" onclick="scrollToSection(event, 'hero')">Home</a></li>
+          <li><a href="#booking" onclick="scrollToSection(event, 'booking')">Prenota</a></li>
+          <li><a href="#punti-forza" onclick="scrollToSection(event, 'punti-forza')">Vantaggi</a></li>
+          <li><a href="#contattaci" onclick="scrollToSection(event, 'contattaci')">Contattaci</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Contenitore per il contenuto dinamico -->
+  <div id="dynamicContent" class="container">
+    <!-- Il contenuto completo verrà caricato qui dinamicamente -->
+  </div>
+  
+  <!-- Link al file JavaScript esterno -->
+  <script src="app.js"></script>
+</body>
+</html>

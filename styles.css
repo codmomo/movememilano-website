@@ -1,0 +1,124 @@
+:root {
+  --primary: #1a73e8;
+  --secondary: #34a853;
+  --accent: #fbbc05;
+  --light: #f8f9fa;
+  --dark: #202124;
+  --gray: #5f6368;
+  --light-gray: #dadce0;
+}
+
+/* Reset e stili base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* Container comune */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px 20px; /* 80px per lasciare spazio all'header fisso */
+  position: relative;
+  z-index: 1;
+}
+
+/* Header della shell */
+.shell-header {
+  background-color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* Menu Hamburger */
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  float: right;
+}
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+/* Adattamento Mobile per Header e menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .nav-menu ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .nav-menu li {
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--light-gray);
+  }
+}
+
+/* Esempi di stili per il contenuto dinamico (modifica e integra secondo le tue necessità) */
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("moveme.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 150px 20px 100px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.hero .btn:hover {
+  background-color: #0d5bcd;
+}
+
+/* Altri stili (Booking, Recensioni, Footer, ecc.) andranno inclusi qui o copiati da quello originale, adattando le dimensioni per il mobile */
